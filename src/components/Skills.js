@@ -1,12 +1,9 @@
 import html from "../assets/img/HTML.jpg";
 import css from "../assets/img/CSS.jpg";
 import javascript from "../assets/img/JavaScript.jpg";
-import phonecert from "../assets/img/phone-cert.jpg"
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+import phonecert from "../assets/img/phone-cert.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-// import colorSharp from "../assets/img/color-sharp.png";
+import { Carousel } from "react-responsive-carousel";
 
 export const Skills = () => {
   const responsive = {
@@ -40,30 +37,17 @@ export const Skills = () => {
                 multi-talented. Well don't take my word for it, let the stats
                 speak.
               </p>
-              {/* <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
+              <Carousel
+                showThumbs={false}
+                autoFocus={true}
+                autoPlay={true}
+                infiniteLoop={true}
+                interval={10000}
+                showArrows={false}
+                showStatus={false}
+                stopOnHover={true}
               >
                 <div className="item">
-                  <img src={meter1} alt="" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="" />
-                  <h5>Brand Identity</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="" />
-                  <h5>Logo Design</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="" />
-                  <h5>Web Development</h5>
-                </div>
-              </Carousel> */}
-              <Carousel showThumbs = {false} autoFocus = {true} autoPlay = {true} infiniteLoop = {true} interval = {10000} showArrows = {false} showStatus = {false} stopOnHover = {true}  >
-              <div className="item">
                   <img src={html} alt="" className="carousel-img" />
                   <h5>HTML Certified</h5>
                 </div>
@@ -79,13 +63,11 @@ export const Skills = () => {
                   <img src={phonecert} alt="" className="carousel-img" />
                   <h5>Slot Certified Phone Technician</h5>
                 </div>
-               
-            </Carousel>
+              </Carousel>
             </div>
           </div>
         </div>
       </div>
-      {/* <img className="background-image-left" src={colorSharp} alt="" /> */}
     </section>
   );
 };
