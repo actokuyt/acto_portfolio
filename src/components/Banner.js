@@ -23,7 +23,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text, delta]);
+  });
 
   const tick = () => {
     let updatedText = textChar.substring(0, text.length + 1);
