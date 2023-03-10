@@ -459,7 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media only screen and (max-width: 800px) {
   .project .nav.nav-pills .nav-link{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .project .nav.nav-pills .nav-link::before {
